@@ -1,0 +1,256 @@
+:root {
+    --black: #000000 ;
+    --white: #ffffff; 
+    --brown: #251605;
+    --clearer-brown: #251605ef;
+    --shadow: #00000093;
+
+}
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+}
+
+ul, menu, h1{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+   
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-image: url(../imgs/Tynka_devron_S.jpg);
+    background-position: 25% 50%;
+    background-size: cover;  
+    height: 590px;
+    
+}
+
+
+
+
+.nav {
+  
+    
+}
+
+.nav__bar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: var(--clearer-brown);
+}
+
+.button_hamburger{
+    display: inline-block;
+   padding: .5em 1em;
+}
+
+.button_hamburger::after {
+    content: url(../svg/hamburger.svg);
+   
+}
+
+.hidden {
+    display: none;
+   position: fixed;
+   top: 50px;
+  }
+
+
+.menu {
+    margin-top: 50px;
+    background-color: var(--clearer-brown);
+    position: fixed;
+    width: 100vw;
+   text-align: center;
+} 
+
+
+
+.menu__button {
+    color: var(--white);
+    padding: 1em;
+}
+
+  
+.head_img {
+    height: inherit;
+    text-align: center;
+    background-color: var(--shadow) ;
+}
+
+
+.head_img__text {
+    color: var(--white);
+    padding-top: 12em;
+   
+}
+
+.main {
+    padding: 1em;
+}
+
+.main__heading {
+    padding: .5em;
+}
+
+.section {
+    padding: .5em;
+}
+
+.section__heading {
+    font-weight: bold;
+    padding: .5em;
+}
+
+.section__img {
+    max-width: 350px;
+    margin: auto;
+}
+
+.img_wrapper__item {
+    width: 100%;
+    height: 100%;
+}
+
+.image__caption {
+    padding: 1em;
+}
+
+.footer {
+    background-color: var(--brown);
+    padding: .5em 1.5em;
+    color: var(--white);
+}
+
+
+.list__item > a {
+color: var(--white);
+}
+
+
+.list__item_logo {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    left: -0.45em;
+    position: relative;
+}
+
+
+.link {
+    display: inline-block;
+    padding: .5em;
+}
+
+.link--ig::before {
+    content: url(../svg/ig_logo.svg);
+    display: inline-block;
+
+}
+
+.link--mail::before {
+    content: url(../svg/mail.svg);
+    display: inline-block;
+
+    
+}
+
+.link--phone::before {
+    content: url(../svg/phone.svg);
+    display: inline-block;
+ 
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns : repeat(2, 1fr) ;
+gap: .5em;
+}
+
+.slider_item {
+    width: 80vw;
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3em auto;
+}
+
+
+.slider_item--jizdarna {
+    background-image: url(../imgs/tynka_jizdarna_S.jpg);
+}
+
+.slider_item--mistovani {
+    background-image: url(../imgs/Green_v_boxe_S.jpg);
+}
+
+
+.slider_item--vybeh {
+    background-image: url(../imgs/vybeh_S.jpg);
+}
+
+.slider_item--krmeni {
+    background-image: url(../imgs/sava_krmeni_S.jpg);
+}
+
+
+.slider_item--sedlovna {
+    background-image: url(../imgs/Klubovna_S.jpg);
+}
+
+.slider_item__wraper {
+    display: flex;
+    align-items: flex-end;
+    height: inherit;
+    background-color: var(--shadow);
+    
+    
+}
+
+
+.slider_item__text {
+    color: var(--white); 
+    font-weight: 600;
+    padding: 2em;
+} 
+
+
+.ustajeni__text {
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+.ustajeni__text--bold {
+    font-weight: bolder;
+}
+
+.ustajeni__text_other {
+    color: rgb(255, 91, 91);
+    font-style: italic;
+    padding: 1em;
+    
+}
+

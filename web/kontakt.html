@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+        <title>JS Vydlákov</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav  class="header__nav nav">
+                <div class="nav__bar">
+                            
+                    <a class="button_hamburger" href="javascript:void(0);" onclick="myFunction()">&#9776</a> 
+                </div>
+                <menu id="myLinks" class="menu hidden">
+                    <li class="menu__item"><a class="button menu__button" href="index.html">Úvod</a></li>
+                    <li class="menu__item"><a class="button menu__button" href="sluzby.html">Služby</a></li>
+                    <li class="menu__item"><a class="button menu__button" href="">Akce</a></li>
+                    <li class="menu__item"><a class="button menu__button" href="kone.html">Koně</a></li>
+                    <li class="menu__item"><a class="button menu__button" href="">Příměstský tábor</a></li>
+                    <li class="menu__item"><a class="button menu__button" href="ceník.html">Ceník</a></li>
+                    <li class="menu__item"><a class="button menu__button" href="kontakt.html">Kontakt</a></li>
+                </menu>
+            </nav>
+            
+            <div class="head_img"> <h1 class="head_img__text">Jezdecká společnost Vydlákov</h1></div>
+        </header>
+    <h2>Kontakt</h2>
+    <section>
+        <h3>správce jízdárny:</h3>
+        <p>Martina Lankašová</p>    
+        <a href="tel:+420739550505">739550505</a>
+        <a href="mailto:langos88@seznam.cz">mailto:langos88@seznam.cz</a>
+        <a href="mailto:langos88@seznam.cz">739550505</a>
+        <p>číslo účtu: 670100-2216887260/6210</p>
+    </section>
+    <footer class="footer">
+        <p class="footer__heading">Jezdecká společnost Vydlákov</p>
+        <ul class="footer__list list">    
+            <li class="list__item"><a href="index.html">Úvod</a></li>
+            <li class="list__item"><a href="sluzby.html">Služby</a></li>
+            <li class="list__item"><a href="">Akce</a></li>
+            <li class="list__item"><a href="kone.html">Koně</a></li>
+            <li class="list__item"><a href="">Příměstský tábor</a></li>
+            <li class="list__item"><a href="ceník.html">Ceník</a></li>
+            <li class="list__item"><a href="kontakt.html">Kontakt</a></li>
+            <li class="list__item list__item"><a class="link link--ig" href="https://www.instagram.com/js_vydlakov/"></a>
+            <a class="link link--mail" href="mailto:langos88@seznam.cz"></a>
+            <a class="link link--phone" href="tel:739550505"></a></li>
+        </ul>
+    </footer>
+    <script>
+    
+        let topMenu = document.getElementById('myLinks');
+        function myFunction() {
+          topMenu.classList.toggle("hidden");
+        }
+      
+        </script>
+</body>
+</html>
