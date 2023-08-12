@@ -1,12 +1,13 @@
 :root {
-    --black: #000000 ;
-    --white: #ffffff; 
+    --black: #000000;
+    --white: #ffffff;
     --brown: #251605;
     --clearer-brown: #251605ef;
     --shadow: #00000093;
     --red: #FE654F;
     --dark-red: #A4031F;
 }
+
 html {
     font-family: 'Inter', sans-serif;
 
@@ -19,13 +20,15 @@ a {
     display: block;
 }
 
-ul, menu, h1{
+ul,
+menu,
+h1 {
     margin: 0;
     padding: 0;
 }
 
 li {
-   
+
     list-style: none;
 }
 
@@ -40,18 +43,15 @@ img {
 .header {
     background-image: url(../imgs/Tynka_devron_S.jpg);
     background-position: 25% 50%;
-    background-size: cover;  
+    background-size: cover;
     height: 590px;
-    
+
 }
 
 
 
 
-.nav {
-  
-    
-}
+.nav {}
 
 .nav__bar {
     position: fixed;
@@ -65,21 +65,21 @@ img {
     background-color: var(--clearer-brown);
 }
 
-.button_hamburger{
+.button_hamburger {
     display: inline-block;
-   padding: .5em 1em;
+    padding: .5em 1em;
 }
 
 .button_hamburger::after {
     content: url(../svg/hamburger.svg);
-   
+
 }
 
 .hidden {
     display: none;
-   position: fixed;
-   top: 50px;
-  }
+    position: fixed;
+    top: 50px;
+}
 
 
 .menu {
@@ -88,8 +88,8 @@ img {
     position: fixed;
     z-index: 22;
     width: 100vw;
-   text-align: center;
-} 
+    text-align: center;
+}
 
 
 
@@ -98,21 +98,21 @@ img {
     padding: 1em;
 }
 
-  
+
 .head_img {
     height: inherit;
     text-align: center;
-    background-color: var(--shadow) ;
+    background-color: var(--shadow);
 }
 
 
 .head_img__text {
     color: var(--white);
-    padding-top: 8em;
+    padding-top: 9em;
     font-size: 36px;
     text-align: start;
     padding-inline: 1em;
-   
+
 }
 
 .main {
@@ -153,8 +153,8 @@ img {
 }
 
 
-.list__item > a {
-color: var(--white);
+.list__item>a {
+    color: var(--white);
 }
 
 
@@ -182,23 +182,23 @@ color: var(--white);
     content: url(../svg/mail.svg);
     display: inline-block;
 
-    
+
 }
 
 .link--phone::before {
     content: url(../svg/phone.svg);
     display: inline-block;
- 
+
 }
 
 .footer__list {
     display: grid;
-    grid-template-columns : repeat(2, 1fr) ;
-gap: .5em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5em;
 }
 
 
-.slider_ustajeni__item{
+.slider_ustajeni__item {
     display: flex !important;
     align-content: center;
     flex-wrap: wrap;
@@ -244,20 +244,20 @@ gap: .5em;
     background-color: var(--shadow);
     position: absolute;
     top: 0;
-    
-    
+
+
 }
 
 
 .slider_item__text {
-    color: var(--white); 
+    color: var(--white);
     font-weight: 600;
     font-size: 24px;
     padding: 16px;
     z-index: 2;
-} 
+}
 
-.slider_item__text--red{
+.slider_item__text--red {
     color: var(--red);
 }
 
@@ -276,20 +276,21 @@ gap: .5em;
     color: var(--red);
     font-style: italic;
     padding: 1em;
-    
+
 }
+
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
 
 .section_kontakt {
     padding: 1em;
 }
 
-.section__item{
-    
+.section__item {
+
     text-align: center;
     padding: 2em 0;
 }
@@ -362,6 +363,73 @@ gap: .5em;
     border-radius: 5px;
 }
 
-.contact_wrapper:hover > .item_contact {
+.contact_wrapper:hover>.item_contact {
     border: none;
+}
+
+.prize_item {
+    padding: 1em;
+    max-width: 250px;
+    margin: 3em auto;
+    border: 2px var(--dark-red) solid;
+    position: relative;
+}
+
+
+
+.prize_item__heading {
+    color: var(--dark-red);
+    padding:.5em;
+    margin: 0;
+    display: inline;
+    background-color: var(--white);
+    position: absolute;
+    top: -20px;
+}
+
+.prize_item__text {
+    margin: 2em 0;
+    font-weight: 600;
+}
+
+
+.prize_item__smalltext {
+    margin: 2em 0;
+}
+
+.prize_button {
+    color: var(--dark-red);
+    border: 2px var(--dark-red) solid;
+    padding: .5em;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.prize_button:hover {
+    background-color: var(--dark-red);
+    color: var(--white);
+}
+
+.prize_item__prize {
+    text-align: end;
+}
+
+.prize_table {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.prani__item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.section_cenik {
+    max-width: 500px;
+    margin: 2em 0;
 }
