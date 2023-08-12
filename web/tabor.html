@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <title>JS Vydlákov</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="nav__bar">
+
+                <a class="button_hamburger" href="javascript:void(0);" onclick="myFunction()"></a>
+            </div>
+            <menu id="myLinks" class="menu hidden">
+                <li class="menu__item"><a class="button menu__button" href="index.html">Úvod</a></li>
+                <li class="menu__item"><a class="button menu__button" href="sluzby.html">Služby</a></li>
+                <li class="menu__item"><a class="button menu__button" href="">Akce</a></li>
+                <li class="menu__item"><a class="button menu__button" href="kone.html">Koně</a></li>
+                <li class="menu__item"><a class="button menu__button" href="tabor.html">Příměstský tábor</a></li>
+                <li class="menu__item"><a class="button menu__button" href="ceník.html">Ceník</a></li>
+                <li class="menu__item"><a class="button menu__button" href="kontakt.html">Kontakt</a></li>
+            </menu>
+        </nav>
+
+        <div class="head_img">
+            <h1 class="head_img__text">JEZDECKÁ SPOLEČNOST VYDLÁKOV</h1>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section_tabor">
+            <h2 class="section__heading">Přímestský tábor</h2>
+            <p class="section__text">Naše jezdecká stáj Vydlákov pořádá každý rok příměstské tábory u koní.</p>
+            <p class="section__text">Tábory jsou určeny pro děti od 6 do 15 let, které mají rády koně a chtějí se o ně
+                naučit starat</p>
+        </section>
+        <section class="section section_tabor section--line">
+            <h3 class="section__heading section__heading--red">Základní informace:</h3>
+            <ul class="section__list list_tabor">
+                <li class="list_tabor__item">Tábory jsou organizovány po týdenních turnusech(pondělí až pátek)</li>
+                <li class="list_tabor__item">každý den začína v 9:00 a končí v 17:00 v areálu naší stáje
+                    Adresa: pod strání 131, Stráž nad Nisou</li>
+                <li class="list_tabor__item">během dne se děti učí péči o koně, jízdě na koních a vše co se koní týče
+                </li>
+                <li class="list_tabor__item">maximální kapacita je 12 míst pro jeden turnus (minimálně musí být obsazeno
+                    5 míst)</li>
+                <li class="list_tabor__item">po celou dobu budeme k zastižení</li>
+            </ul>
+
+            <a class="prize_button prize_button--center" href="kontakt.html">kontaktujte nás</a>
+        </section>
+        <section class="section section_tabor section--line">
+            <h3 class="section__heading section__heading--red">Nutné vybavení:</h3>
+            <ul class="section__list list_tabor">
+                <li class="list_tabor__item"><span class="list_tabor__item--bold">kartička pojištěnce</span> (děti musí
+                    u sebe)</li>
+                <li class="list_tabor__item"><span class="list_tabor__item--bold">očkování proti tetanu</span></li>
+                <li class="list_tabor__item"><span class="list_tabor__item--bold">zařízené úrazové pojištění
+                        (doporučeno)</span></li>
+                <li class="list_tabor__item">boty s hladkou podrážkou, gumáky (dle počasí)</li>
+                <li class="list_tabor__item">úzké, dlouhé elastické kalhoty (na ježdění), vhodné oblečení (dle počasí)
+                </li>
+                <li class="list_tabor__item">repelent, opalovací krém</li>
+                <li class="list_tabor__item">pokrývka hlavy</li>
+                <li class="list_tabor__item">psací potřeby, bloček</li>
+                <li class="list_tabor__item">dobrou náladu!</li>
+            </ul>
+        </section>
+        <section class="section section_tabor section--line">
+            <h3 class="section__heading section__heading--red">Ceny a platební informace</h3>
+            <p class="section__text">4 500,-/turnus (1 dítě)</p>
+            <p class="section__text">platba musí být provedena do <span class="list_tabor__item--bold">10.6</span></p>
+            <p class="section__text">způsoby platby:</p>
+            <ul class="section__list list_tabor">
+                <li class="list_tabor__item">hotově přímo ve stáji</li>
+                <li class="list_tabor__item"><span class="list_tabor__item--block">převodem na účet:</span> <span
+                        class="list_tabor__item--bold">670100-2216887260/6210</span> (do zprávy pro příjemce uveďte
+                    jméno dítěte a číslo turnusu)</li>
+            </ul>
+        </section>
+        <section class="section section_tabor ">
+            <h3 class="section__heading section__heading--red">Způsoby přihlášení dítěte:</h3>
+            <ul class="section__list list_tabor">
+                <li class="list_tabor__item">Osobním odevzdáním vyplněné přihlášky ve stáji + platba</li>
+                <li class="list_tabor__item">zaláním el. poštou na e-mail a zaplacením platby převodem na účet</li>
+            </ul>
+            <a class="prize_button prize_button--center" href="mailto:langos88@seznam.cz">zaslat e-mail</a>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__heading">Jezdecká společnost Vydlákov</p>
+        <ul class="footer__list list">
+            <li class="list__item"><a href="index.html">Úvod</a></li>
+            <li class="list__item"><a href="sluzby.html">Služby</a></li>
+            <li class="list__item"><a href="">Akce</a></li>
+            <li class="list__item"><a href="kone.html">Koně</a></li>
+            <li class="list__item"><a href="tabor.html">Příměstský tábor</a></li>
+            <li class="list__item"><a href="ceník.html">Ceník</a></li>
+            <li class="list__item"><a href="kontakt.html">Kontakt</a></li>
+            <li class="list__item list__item"><a class="link link--ig"
+                    href="https://www.instagram.com/js_vydlakov/"></a>
+                <a class="link link--mail" href="mailto:langos88@seznam.cz"></a>
+                <a class="link link--phone" href="tel:739550505"></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+
+        let topMenu = document.getElementById('myLinks');
+        function myFunction() {
+            topMenu.classList.toggle("hidden");
+        }
+
+    </script>
+</body>
+
+</html>
