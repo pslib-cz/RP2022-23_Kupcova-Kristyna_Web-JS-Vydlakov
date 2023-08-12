@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
     <title>JS Vydlákov</title>
 </head>
 
@@ -34,7 +34,7 @@
         </nav>
 
         <div class="head_img">
-            <h1 class="head_img__text">Jezdecká společnost Vydlákov</h1>
+            <h1 class="head_img__text">JEZDECKÁ SPOLEČNOST VYDLÁKOV</h1>
         </div>
     </header>
     <main class="main main_sluzby">
@@ -49,29 +49,30 @@
 
                 <div class="swiper">
                     <div class="ustajeni__slider slider_ustajeni swiper-wrapper">
-                        <div class="slider_ustajeni__item slider_item slider_item--mistovani swiper-slide"><span
-                                class="slider_item__wraper">
+                        <div class="slider_ustajeni__item slider_item slider_item--mistovani swiper-slide">
+                            <span class="slider_item__wraper"></span>
                                 <p class="slider_item__text">USTÁJENÍ V BOXE DENNĚ MÍSTOVANÉ PODESTÝLKA SLÁMOU</p>
-                            </span></div>
-                        <div class="slider_ustajeni__item slider_item slider_item--krmeni swiper-slide"><span
-                                class="slider_item__wraper">
-                                <p class="slider_item__text">DVAKRÁT DENNĚ KRMENÍ - NAŠE MUSLI, OVES A DOPLŇKY
-                                    KRMENÍ(NADSTAVBY A VYJÍMKY JSOU NA DOMLUVĚ)</p>
-                            </span></div>
-                        <div class="slider_ustajeni__item slider_item slider_item--vybeh swiper-slide"><span
-                                class="slider_item__wraper">
+                            </div>
+                        <div class="slider_ustajeni__item slider_item slider_item--krmeni swiper-slide">
+                            <span class="slider_item__wraper"></span>
+                            <p class="slider_item__text">DVAKRÁT DENNĚ KRMENÍ - NAŠE MUSLI, OVES A DOPLŇKY
+                                KRMENÍ(NADSTAVBY A VYJÍMKY JSOU NA DOMLUVĚ)</p>
+                        </div>
+                        <div class="slider_ustajeni__item slider_item slider_item--vybeh swiper-slide">
+                            <span class="slider_item__wraper"></span>
                                 <p class="slider_item__text">DENNÍ POBYT KONĚ VE VÝBĚHU</p>
-                            </span></div>
-                        <div class="slider_ustajeni__item slider_item slider_item--jizdarna swiper-slide"><span
-                                class="slider_item__wraper">
-                                <p class="slider_item__text">MOŽNOST ZDARMA VYUŽITÍ PÍSKOVÉ JÍZDÁRNY VČETNĚ MATERIÁLU
+                           </div>
+                        <div class="slider_ustajeni__item slider_item slider_item--jizdarna swiper-slide">
+                            <span class="slider_item__wraper"></span>
+                                <p class="slider_item__text">MOŽNOST <span class="slider_item__text--red">ZDARMA</span>
+                                    VYUŽITÍ PÍSKOVÉ JÍZDÁRNY VČETNĚ MATERIÁLU
                                     PRO
                                     VÝCVIK KONÍ</p>
-                            </span></div>
-                        <div class="slider_ustajeni__item slider_item slider_item--sedlovna swiper-slide"><span
-                                class="slider_item__wraper">
+                            </div>
+                        <div class="slider_ustajeni__item slider_item slider_item--sedlovna swiper-slide">
+                            <span class="slider_item__wraper"></span>
                                 <p class="slider_item__text"> MOŽNOST VYUŽITÍ VYTÁPĚNÉ SEDLOVNY A KLUBOVNY</p>
-                            </span>
+                            
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -125,22 +126,22 @@
 
     </script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-<script>
-    var swiper = new Swiper(".swiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      /*autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },*/
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      }
-    });
-  </script>
+    <script>
+        var swiper = new Swiper(".swiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
 
 
 </html>

@@ -4,10 +4,11 @@
     --brown: #251605;
     --clearer-brown: #251605ef;
     --shadow: #00000093;
-
+    --red: #FE654F;
+    --dark-red: #A4031F;
 }
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -33,6 +34,9 @@ img {
     height: 100%;
 }
 
+
+
+
 .header {
     background-image: url(../imgs/Tynka_devron_S.jpg);
     background-position: 25% 50%;
@@ -51,6 +55,7 @@ img {
 
 .nav__bar {
     position: fixed;
+    z-index: 22;
     top: 0;
     height: 50px;
     width: 100vw;
@@ -81,6 +86,7 @@ img {
     margin-top: 50px;
     background-color: var(--clearer-brown);
     position: fixed;
+    z-index: 22;
     width: 100vw;
    text-align: center;
 } 
@@ -102,7 +108,10 @@ img {
 
 .head_img__text {
     color: var(--white);
-    padding-top: 12em;
+    padding-top: 8em;
+    font-size: 36px;
+    text-align: start;
+    padding-inline: 1em;
    
 }
 
@@ -188,9 +197,17 @@ color: var(--white);
 gap: .5em;
 }
 
+
+.slider_ustajeni__item{
+    display: flex !important;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
 .slider_item {
     width: 80vw;
-    height: 40vh;
+    height: 40vh !important;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,6 +217,7 @@ gap: .5em;
 
 .slider_item--jizdarna {
     background-image: url(../imgs/tynka_jizdarna_S.jpg);
+
 }
 
 .slider_item--mistovani {
@@ -221,10 +239,11 @@ gap: .5em;
 }
 
 .slider_item__wraper {
-    display: flex;
-    align-items: flex-end;
+    width: inherit;
     height: inherit;
     background-color: var(--shadow);
+    position: absolute;
+    top: 0;
     
     
 }
@@ -233,9 +252,14 @@ gap: .5em;
 .slider_item__text {
     color: var(--white); 
     font-weight: 600;
-    padding: 2em;
-    height: 40vw;
+    font-size: 24px;
+    padding: 16px;
+    z-index: 2;
 } 
+
+.slider_item__text--red{
+    color: var(--red);
+}
 
 
 .ustajeni__text {
@@ -249,7 +273,7 @@ gap: .5em;
 }
 
 .ustajeni__text_other {
-    color: rgb(255, 91, 91);
+    color: var(--red);
     font-style: italic;
     padding: 1em;
     
@@ -258,3 +282,86 @@ gap: .5em;
     width: 100%;
     height: 100%;
   }
+
+
+.section_kontakt {
+    padding: 1em;
+}
+
+.section__item{
+    
+    text-align: center;
+    padding: 2em 0;
+}
+
+.section_contact__heading {
+    font-weight: 600;
+}
+
+.item_contact {
+    border-right: 1px solid var(--dark-red);
+    border-left: 1px solid var(--dark-red);
+    width: 250px;
+
+}
+
+.section__item--phone::before {
+    content: url(../svg/phone_red.svg);
+
+}
+
+.section__item--mail::before {
+    content: url(../svg/mail_red.svg);
+
+}
+
+.section__item--ig::before {
+    content: url(../svg/ig_red.svg);
+}
+
+.section__item--card::before {
+    content: url(../svg/card_red.svg);
+}
+
+.item_contact__heading {
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+.contact_cards_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 3em;
+}
+
+
+.section__item--phone:hover::before {
+    content: url(../svg/phone_white.svg);
+}
+
+
+.section__item--mail:hover::before {
+    content: url(../svg/mail_white.svg);
+}
+
+
+.section__item--ig:hover::before {
+    content: url(../svg/ig_white.svg);
+}
+
+
+.section__item--card:hover::before {
+    content: url(../svg/card_white.svg);
+}
+
+.contact_wrapper:hover {
+    background-color: var(--dark-red);
+    color: white;
+    border-radius: 5px;
+}
+
+.contact_wrapper:hover > .item_contact {
+    border: none;
+}

@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
-        <title>JS Vydlákov</title>
-    </head>
-    <body>
-        <header class="header">
-            <nav  class="header__nav nav">
-                <div class="nav__bar">
-                            
-                    <a class="button_hamburger" href="javascript:void(0);" onclick="myFunction()"></a> 
-                </div>
-                <menu id="myLinks" class="menu hidden">
-                    <li class="menu__item"><a class="button menu__button" href="index.html">Úvod</a></li>
-                    <li class="menu__item"><a class="button menu__button" href="sluzby.html">Služby</a></li>
-                    <li class="menu__item"><a class="button menu__button" href="">Akce</a></li>
-                    <li class="menu__item"><a class="button menu__button" href="kone.html">Koně</a></li>
-                    <li class="menu__item"><a class="button menu__button" href="">Příměstský tábor</a></li>
-                    <li class="menu__item"><a class="button menu__button" href="ceník.html">Ceník</a></li>
-                    <li class="menu__item"><a class="button menu__button" href="kontakt.html">Kontakt</a></li>
-                </menu>
-            </nav>
-            
-            <div class="head_img"> <h1 class="head_img__text">Jezdecká společnost Vydlákov</h1></div>
-        </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <title>JS Vydlákov</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="nav__bar">
+
+                <a class="button_hamburger" href="javascript:void(0);" onclick="myFunction()"></a>
+            </div>
+            <menu id="myLinks" class="menu hidden">
+                <li class="menu__item"><a class="button menu__button" href="index.html">Úvod</a></li>
+                <li class="menu__item"><a class="button menu__button" href="sluzby.html">Služby</a></li>
+                <li class="menu__item"><a class="button menu__button" href="">Akce</a></li>
+                <li class="menu__item"><a class="button menu__button" href="kone.html">Koně</a></li>
+                <li class="menu__item"><a class="button menu__button" href="">Příměstský tábor</a></li>
+                <li class="menu__item"><a class="button menu__button" href="ceník.html">Ceník</a></li>
+                <li class="menu__item"><a class="button menu__button" href="kontakt.html">Kontakt</a></li>
+            </menu>
+        </nav>
+
+        <div class="head_img">
+            <h1 class="head_img__text">JEZDECKÁ SPOLEČNOST VYDLÁKOV</h1>
+        </div>
+    </header>
     <main class="main main_kone">
         <h2 class="main__heading main_kone__heading">Koně</h2>
         <p class="main__ text main_kone__text">V současné době se u nás ve stáji nachází 20 koní</p>
@@ -44,8 +48,17 @@
                 <p class="card__jmeno">Bianca</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 1.5.2011</p>
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> kříženec</p>
-                <p class="card__otec card_text"><span class="card_text--bold" class="card_text--bold">Otec:</span> neznámý</p>
-                <p class="card__matka card_text"><span class="card_text--bold" class="card_text--bold">Matka:</span> 6864 Betty</p>
+                <p class="card__otec card_text"><span class="card_text--bold" class="card_text--bold">Otec:</span>
+                    neznámý</p>
+                <p class="card__matka card_text"><span class="card_text--bold" class="card_text--bold">Matka:</span>
+                    6864 Betty</p>
+
+                <div id="lightgallery">
+                    <a href="./imgs/bianka_soran_jested.jpg" data-lg-size="1600-2400">
+                        <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg" />
+                    </a>
+                </div>
+
             </div>
             <div class="section__card card">
                 <p class="card__jmeno">Karola-L</p>
@@ -53,63 +66,73 @@
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Pony</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> neznámý</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 67/962 Kendy</p>
-            </div>        
+                <div id="lightgallery">
+                    <a href="./imgs/bianka_soran_jested.jpg" data-lg-size="1600-2400">
+                        <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg" />
+                    </a>
+                </div>
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Saul</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2015</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Champs Elysees</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Caesarea</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Soran</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 26.4.2017</p>
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český teplokrevník</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 1463 Dubel</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 53/748 Sidy</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Dambar Šampion</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 21.4.2018</p>
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český teplokrevník</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 1463 Dubel</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 53/748 Sidy</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Greenhorn</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 11.3.2012</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický teplokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický teplokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Ruler Of The World</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Regresa A mi</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Bobeš</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 31.5.1995</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span>  Huculský kůň x Fjordský kůň</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Huculský kůň x Fjordský
+                    kůň</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> neznámý</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> neznámá</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Zorro</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 28.3.2017</p>
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Huculský kůň</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 740 Goral Ind</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 47/798 Zázvorka</p>
-            </div>        
+            </div>
             <div class="section__card card">
-                <p class="card__jmeno">Lídr/p>
+                <p class="card__jmeno">Lídr</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 21.4.2016</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český sportovní pony</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český sportovní pony
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 2056 Angelis Desmond</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 65/424 Líza 1</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Lindor</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2016</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český sportovní pony</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český sportovní pony
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 2056 Angelis Desmond</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 65/425 Linda 19</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Robin</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 12.5.2005</p>
@@ -118,12 +141,12 @@
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Cerlinka</p>
             </div>
             <div class="section__card card">
-            <p class="card__jmeno">Rambo</p>
-            <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2004</p>
-            <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Shetlandský pony</p>
-            <p class="card__otec card_text"><span>Otec:</sp> Rambo</p>
-            <p class="card__matka card_text"><span>Matka:</sp> Cerlinka</p>
-        </div>
+                <p class="card__jmeno">Rambo</p>
+                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2004</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Shetlandský pony</p>
+                <p class="card__otec card_text"><span>Otec:</sp> Rambo</p>
+                <p class="card__matka card_text"><span>Matka:</sp> Cerlinka</p>
+            </div>
         </section>
         <section class="section section_kone section_kone--soukromi">
             <h3 class="section__heading section_kone__heading" id="soukromi">Soukromí koně</h3>
@@ -137,57 +160,62 @@
             <div class="section__card card">
                 <p class="card__jmeno">Sauvageonne</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 10.3.2017</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Pop Rock</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Still Band</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Sea Jet</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 27.3.2009</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Tribal Instinct</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Sea Plane</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Silverstone</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 11.3.2012</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Silver Frost</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Diamond Laly</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Devron</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 14.4.2006</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> La Manche</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Demira</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Nero</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 18.4.2004</p>
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český plnokrevník</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 2749 Calypso</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> JM 4108 Verunka</p>
-            </div>        
+            </div>
             <div class="section__card card">
                 <p class="card__jmeno">Markus</p>
                 <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 19.5.2012</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Slovenský plnokrevník</p>
+                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Slovenský plnokrevník
+                </p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 623 Rubicon</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 34341 Miluška</p>
-            </div>        
-           
-        </div>
+            </div>
+
+            </div>
         </section>
         <menu class="menu">
             <li class="menu__item"><a class="button button_kone" href="#nasi">Naší koně</a></li>
             <li class="menu__item"><a class="button button_kone" href="#soukromi">soukromí koně</a></li>
         </menu>
-       
+
     </main>
     <footer class="footer">
         <p class="footer__heading">Jezdecká společnost Vydlákov</p>
-        <ul class="footer__list list">    
+        <ul class="footer__list list">
             <li class="list__item"><a href="index.html">Úvod</a></li>
             <li class="list__item"><a href="sluzby.html">Služby</a></li>
             <li class="list__item"><a href="">Akce</a></li>
@@ -195,18 +223,21 @@
             <li class="list__item"><a href="">Příměstský tábor</a></li>
             <li class="list__item"><a href="ceník.html">Ceník</a></li>
             <li class="list__item"><a href="kontakt.html">Kontakt</a></li>
-            <li class="list__item list__item"><a class="link link--ig" href="https://www.instagram.com/js_vydlakov/"></a>
-            <a class="link link--mail" href="mailto:langos88@seznam.cz"></a>
-            <a class="link link--phone" href="tel:739550505"></a></li>
+            <li class="list__item list__item"><a class="link link--ig"
+                    href="https://www.instagram.com/js_vydlakov/"></a>
+                <a class="link link--mail" href="mailto:langos88@seznam.cz"></a>
+                <a class="link link--phone" href="tel:739550505"></a>
+            </li>
         </ul>
     </footer>
     <script>
-    
+
         let topMenu = document.getElementById('myLinks');
         function myFunction() {
-          topMenu.classList.toggle("hidden");
+            topMenu.classList.toggle("hidden");
         }
-      
-        </script>
-    </body>
+
+    </script>
+</body>
+
 </html>
