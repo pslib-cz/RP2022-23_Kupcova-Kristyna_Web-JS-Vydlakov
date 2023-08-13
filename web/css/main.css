@@ -125,11 +125,43 @@ img {
 
 .section {
     padding: .5em;
+    position: relative;
+}
+
+.section__map>iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.section__map {
+    position: relative;
+    padding-bottom: 50%;
+    max-width: 600px;
+    max-height: 400px;
+}
+
+
+
+.main__section {
+    padding: 2em .5em;
 }
 
 .section__heading {
     font-weight: bold;
     padding: .5em;
+}
+
+.section__heading--absolute {
+    position: absolute;
+    top: 10px;
+    background-color: var(--white);
+    margin-left: 1em;
+    color: var(--dark-red);
 }
 
 .section__heading--red {
@@ -140,6 +172,14 @@ img {
 .section__img {
     max-width: 350px;
     margin: auto;
+}
+
+
+
+.section__text--border {
+    border-top: 2px var(--dark-red) solid;
+    padding-top: 2em;
+    line-height: 1.5;
 }
 
 .img_wrapper__item {
@@ -312,6 +352,7 @@ img {
     border-right: 1px solid var(--dark-red);
     border-left: 1px solid var(--dark-red);
     width: 250px;
+    height: 200px;
 
 }
 
@@ -340,11 +381,14 @@ img {
 
 .contact_cards_wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 32px;
     padding-bottom: 3em;
+    justify-content: center;
 }
+
 
 
 .section__item--phone:hover::before {
@@ -388,7 +432,7 @@ img {
 
 .prize_item__heading {
     color: var(--dark-red);
-    padding:.5em;
+    padding: .5em;
     margin: 0;
     display: inline;
     background-color: var(--white);
@@ -453,21 +497,22 @@ img {
     margin: 2em 0;
 }
 
-.prani__item > p {
+.prani__item>p {
     margin: .5em 0;
 }
 
 .section--line::after {
-     content: "";
-     width: 96px;
-     height: 2px;
-     background-color: var(--dark-red);
-     display: block;
-     margin: 2em auto;
+    content: "";
+    width: 96px;
+    height: 2px;
+    background-color: var(--dark-red);
+    display: block;
+    margin: 2em auto;
 }
 
 .list_tabor__item {
     margin: 0 .5em;
+
 }
 
 .list_tabor__item--bold {
@@ -483,8 +528,7 @@ img {
     display: table;
 }
 
-.section_tabor > .section__text {
-    margin: 0 .2em;
-    padding: .5em;
-}
+.list_tabor__payment {
+    margin: 0 1em;
 
+}

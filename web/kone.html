@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/album.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
@@ -53,11 +54,14 @@
                 <p class="card__matka card_text"><span class="card_text--bold" class="card_text--bold">Matka:</span>
                     6864 Betty</p>
 
-                <div id="lightgallery">
-                    <a href="./imgs/bianka_soran_jested.jpg" data-lg-size="1600-2400">
-                        <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg" />
-                    </a>
-                </div>
+                <figure>
+                    <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg"
+                        onclick="this.classList.toggle('workingImage'); openImg();" />
+                </figure>
+                <figure>
+                    <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg"
+                        onclick="this.classList.toggle('workingImage'); openImg();" />
+                </figure>
 
             </div>
             <div class="section__card card">
@@ -66,11 +70,12 @@
                 <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Pony</p>
                 <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> neznámý</p>
                 <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 67/962 Kendy</p>
-                <div id="lightgallery">
-                    <a href="./imgs/bianka_soran_jested.jpg" data-lg-size="1600-2400">
-                        <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg" />
-                    </a>
-                </div>
+                <figure>
+
+                    <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg "
+                        onclick="this.classList.toggle('workingImage'); openImg();" />
+
+                </figure>
             </div>
             <div class="section__card card">
                 <p class="card__jmeno">Saul</p>
@@ -230,6 +235,10 @@
             </li>
         </ul>
     </footer>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeImg()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
     <script>
 
         let topMenu = document.getElementById('myLinks');
@@ -237,6 +246,26 @@
             topMenu.classList.toggle("hidden");
         }
 
+    </script>
+
+    <script>
+        // Get the modal
+        let modal = document.getElementById('myModal');
+
+        function openImg() {
+            modal.style.display = "block";
+            let modalImg = document.getElementById("modal-img");
+            let getImg = document.querySelector(".workingImage");
+            let newAdress = getImg.src.replace("_S", "_B");
+            modalImg.src = newAdress;
+            console.log("Adresa: " + newAdress);
+        }
+
+        function closeImg() {
+            let close = document.getElementsByClassName("workingImage");
+            close[0].classList.toggle("workingImage");
+            modal.style.display = "none";
+        }
     </script>
 </body>
 
