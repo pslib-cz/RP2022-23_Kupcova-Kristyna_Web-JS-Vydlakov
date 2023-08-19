@@ -3,7 +3,7 @@
     --white: #ffffff;
     --brown: #251605;
     --clearer-brown: #251605ef;
-    --shadow: #00000093;
+    --shadow: #000000af;
     --red: #FE654F;
     --dark-red: #A4031F;
 }
@@ -39,12 +39,17 @@ img {
 
 
 
+.main {
+    max-width: 500px;
+    margin: auto;
+}
+
 
 .header {
     background-image: url(../imgs/Tynka_devron_S.jpg);
-    background-position: 25% 50%;
+    background-position: 25% 5%;
     background-size: cover;
-    height: 590px;
+    height: 100vh;
 
 }
 
@@ -103,15 +108,17 @@ img {
     height: inherit;
     text-align: center;
     background-color: var(--shadow);
+    position: relative;
 }
 
 
 .head_img__text {
     color: var(--white);
-    padding-top: 9em;
     font-size: 36px;
     text-align: start;
-    padding-inline: 1em;
+    position: absolute;
+    top: 50vh;
+    padding: 1em;
 
 }
 
@@ -128,7 +135,7 @@ img {
     position: relative;
 }
 
-.section__map>iframe {
+.section__map > iframe {
     height: 100%;
     width: 100%;
     left: 0;
@@ -143,6 +150,7 @@ img {
     padding-bottom: 50%;
     max-width: 600px;
     max-height: 400px;
+    margin: auto;
 }
 
 
@@ -194,6 +202,8 @@ img {
 .footer {
     background-color: var(--brown);
     padding: .5em 1.5em;
+    margin-top: 2em;
+    margin: auto;
     color: var(--white);
 }
 
@@ -240,10 +250,15 @@ img {
 
 }
 
+.footer__heading{
+    text-align: center;
+}
+
 .footer__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 150px);
     gap: .5em;
+    justify-content: center;
 }
 
 
@@ -413,12 +428,10 @@ img {
 .contact_wrapper:hover {
     background-color: var(--dark-red);
     color: white;
-    border-radius: 5px;
+
 }
 
-.contact_wrapper:hover>.item_contact {
-    border: none;
-}
+
 
 .prize_item {
     padding: 1em;
@@ -504,7 +517,7 @@ img {
 .section--line::after {
     content: "";
     width: 96px;
-    height: 2px;
+    height: 1px;
     background-color: var(--dark-red);
     display: block;
     margin: 2em auto;
