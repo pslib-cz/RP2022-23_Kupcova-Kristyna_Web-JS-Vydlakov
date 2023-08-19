@@ -56,8 +56,6 @@ img {
 
 
 
-.nav {}
-
 .nav__bar {
     position: fixed;
     z-index: 22;
@@ -128,6 +126,7 @@ img {
 
 .main__heading {
     padding: .5em;
+    max-width: 700px;
 }
 
 .section {
@@ -368,6 +367,7 @@ img {
     border-left: 1px solid var(--dark-red);
     width: 250px;
     height: 200px;
+    display: inline-block;
 
 }
 
@@ -394,16 +394,20 @@ img {
     padding: 1em 0;
 }
 
+
+
 .contact_cards_wrapper {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     gap: 32px;
-    padding-bottom: 3em;
+    flex-wrap: wrap;
     justify-content: center;
-}
+    margin: 2em 0;
 
+} 
+
+.contact_wrapper {
+    display: inline-block;
+}
 
 
 .section__item--phone:hover::before {
@@ -431,14 +435,21 @@ img {
 
 }
 
+.prize {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
 
 
 .prize_item {
     padding: 1em;
-    max-width: 250px;
-    margin: 3em auto;
+    width: 250px;
     border: 2px var(--dark-red) solid;
     position: relative;
+    
 }
 
 
@@ -507,7 +518,7 @@ img {
 
 .section_cenik {
     max-width: 500px;
-    margin: 2em 0;
+    margin: 2em auto;
 }
 
 .prani__item>p {
