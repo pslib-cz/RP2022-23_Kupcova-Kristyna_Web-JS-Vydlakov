@@ -18,7 +18,7 @@
 
     .main {
         max-width: none;
-        padding: 0 10em;
+        padding: 0 10vw;
         margin: auto;
     }
 
@@ -37,6 +37,26 @@
 
     .section__img {
         max-width: 600px;
+    }
+
+    .section_cards__card {
+        display: flex;
+        gap: 2em;
+        max-width: 700px;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .card_top__jmeno--absolute {
+        top: -14px;   
+    }
+
+    .card_top {
+        margin: 0;
+    }
+
+    .section_cards {
+        gap: 8em;
     }
 
 }

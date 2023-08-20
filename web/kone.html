@@ -25,7 +25,7 @@
             <menu id="myLinks" class="menu hidden">
                 <li class="menu__item"><a class="button menu__button" href="index.html">Úvod</a></li>
                 <li class="menu__item"><a class="button menu__button" href="sluzby.html">Služby</a></li>
-                <li class="menu__item"><a class="button menu__button" href="">Akce</a></li>
+                <li class="menu__item"><a class="button menu__button" href="akce.html">Akce</a></li>
                 <li class="menu__item"><a class="button menu__button" href="kone.html">Koně</a></li>
                 <li class="menu__item"><a class="button menu__button" href="tabor.html">Příměstský tábor</a></li>
                 <li class="menu__item"><a class="button menu__button" href="ceník.html">Ceník</a></li>
@@ -35,188 +35,288 @@
 
         <div class="head_img">
             <h1 class="head_img__text">JEZDECKÁ SPOLEČNOST VYDLÁKOV</h1>
-        </div> 
+        </div>
     </header>
     <main class="main main_kone">
         <h2 class="main__heading main_kone__heading">Koně</h2>
         <p class="main__ text main_kone__text">V současné době se u nás ve stáji nachází 20 koní</p>
         <ul class="small_nav">
-            <li class="small_nav__item"><a class="button button_kone" href="#nasi">Naší koně</a></li>
-            <li class="small_nav__item"><a class="button button_kone" href="#soukromi">soukromí koně</a></li>
+            <li class="small_nav__item"><a class="button button_kone prize_button" href="#nasi">Naši koně</a></li>
+            <li class="small_nav__item"><a class="button button_kone prize_button" href="#soukromi">soukromí koně</a>
+            </li>
         </ul>
         <section class="section section_kone section_kone--nasi">
             <h3 class="section__heading section_kone__heading" id="nasi">Naši koně</h3>
-            <div class="section__card card">
-                <p class="card__jmeno">Bianca</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 1.5.2011</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> kříženec</p>
-                <p class="card__otec card_text"><span class="card_text--bold" class="card_text--bold">Otec:</span>
-                    neznámý</p>
-                <p class="card__matka card_text"><span class="card_text--bold" class="card_text--bold">Matka:</span>
-                    6864 Betty</p>
+            <div class="section_cards"> 
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Bianca</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 1.5.2011</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> kříženec</p>
+                        <p class="card_top__otec card_text"><span class="card_top_text--bold" class="card_top_text--bold">Otec:</span>neznámý</p>
+                        <p class="card__matka card_top_text"><span class="card_top_text--bold" class="card_top_text--bold">Matka:</span>6864 Betty</p>
+                    </div>
 
-                <figure>
-                    <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg"
-                        onclick="this.classList.toggle('workingImage'); openImg();" />
-                </figure>
-                <figure>
-                    <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg"
-                        onclick="this.classList.toggle('workingImage'); openImg();" />
-                </figure>
+                    <figure class="img_kone__wrapper">
+                        <img alt="Fotografie rezavé kobylky Bianky" src="./imgs/Bianca_2_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
 
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Karola-L</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 15.9.2010</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Pony</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> neznámý</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 67/962 Kendy</p>
-                <figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Karola-L</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 15.9.2010</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Pony</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> neznámý</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 67/962 Kendy</p>
+                    </div>
 
-                    <img alt="img1" src="./imgs/bianka_soran_jested_S.jpg "
-                        onclick="this.classList.toggle('workingImage'); openImg();" />
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Karola_2_S.jpg "
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Saul</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 8.5.2015</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> Champs Elysees</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Caesarea</p>
+                    </div>
 
-                </figure>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Saul</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2015</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Champs Elysees</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Caesarea</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Soran</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 26.4.2017</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český teplokrevník</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 1463 Dubel</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 53/748 Sidy</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Dambar Šampion</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 21.4.2018</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český teplokrevník</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 1463 Dubel</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 53/748 Sidy</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Greenhorn</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 11.3.2012</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický teplokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Ruler Of The World</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Regresa A mi</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Bobeš</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 31.5.1995</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Huculský kůň x Fjordský
-                    kůň</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> neznámý</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> neznámá</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Zorro</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 28.3.2017</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Huculský kůň</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 740 Goral Ind</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 47/798 Zázvorka</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Lídr</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 21.4.2016</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český sportovní pony
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 2056 Angelis Desmond</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 65/424 Líza 1</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Lindor</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2016</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český sportovní pony
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 2056 Angelis Desmond</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 65/425 Linda 19</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Robin</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 12.5.2005</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Shetlandský pony</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Rambo</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Cerlinka</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Rambo</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 8.5.2004</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Shetlandský pony</p>
-                <p class="card__otec card_text"><span>Otec:</sp> Rambo</p>
-                <p class="card__matka card_text"><span>Matka:</sp> Cerlinka</p>
-            </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Saul_2_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Soran</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 26.4.2017</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Český teplokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 1463 Dubel</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 53/748 Sidy</p>
+                    </div>
+
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Soran_2_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                   <div class="card_top">
+                        <p class="card_top__jmeno">Dambar Šampion</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 21.4.2018</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Český teplokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 1463 Dubel</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 53/748 Sidy</p>
+                   </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Dambar_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Greenhorn</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 11.3.2012</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Anglický teplokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> Ruler Of The World</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Regresa A mi</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Green_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Bobeš</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 31.5.1995</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Huculský kůň x Fjordský kůň</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> neznámý</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> neznámá</p>
+                    </div>
+
+                    <figure class="img_kone__wrapper img_kone__wrapper--vyska">
+                        <img alt="img1" src="./imgs/Bobes_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Zorro</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 28.3.2017</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Huculský kůň</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 740 Goral Ind</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 47/798 Zázvorka</p>
+                    </div>
+
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Zorro_2_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Lídr</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 21.4.2016</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Český sportovní pony</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 2056 Angelis Desmond</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 65/424 Líza 1</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Rocky_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Lindor</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 8.5.2016</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Český sportovní pony</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 2056 Angelis Desmond</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 65/425 Linda 19</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Lord_3_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Robin</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 12.5.2005</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Shetlandský pony</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> Rambo</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Cerlinka</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Robin_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Rambo</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 8.5.2004</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Shetlandský pony</p>
+                        <p class="card_top__otec card_top_text"><span>Otec:</sp> Rambo</p>
+                        <p class="card_top__matka card_top_text"><span>Matka:</sp> Cerlinka</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Rambo_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
         </section>
         <section class="section section_kone section_kone--soukromi">
             <h3 class="section__heading section_kone__heading" id="soukromi">Soukromí koně</h3>
-            <div class="section__card card">
-                <p class="card__jmeno">Monty</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 27.9.2009</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český teplokrevník</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 923 Amarillo</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 50/542 Montilla</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Sauvageonne</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 10.3.2017</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Pop Rock</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Still Band</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Sea Jet</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 27.3.2009</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Tribal Instinct</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Sea Plane</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Silverstone</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 11.3.2012</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> Silver Frost</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Diamond Laly</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Devron</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 14.4.2006</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Anglický plnokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> La Manche</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> Demira</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Nero</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 18.4.2004</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Český plnokrevník</p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 2749 Calypso</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> JM 4108 Verunka</p>
-            </div>
-            <div class="section__card card">
-                <p class="card__jmeno">Markus</p>
-                <p class="card__datum card_text"><span class="card_text--bold">Datum narození:</span> 19.5.2012</p>
-                <p class="card__plemeno card_text"><span class="card_text--bold">Plemeno:</span> Slovenský plnokrevník
-                </p>
-                <p class="card__otec card_text"><span class="card_text--bold">Otec:</span> 623 Rubicon</p>
-                <p class="card__matka card_text"><span class="card_text--bold">Matka:</span> 34341 Miluška</p>
+            <div class="section_cards">
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Monty</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 27.9.2009</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Český teplokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 923 Amarillo</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 50/542 Montilla</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Monty_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Sauvageonne</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 10.3.2017</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> Pop Rock</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Still Band</p>
+                    </div>
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Sava__2_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Sea Jet</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 27.3.2009</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> Tribal Instinct</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Sea Plane</p>
+                    </div>
+
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/Seajet_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Silverstone</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 11.3.2012</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> Silver Frost</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Diamond Laly</p>
+                    </div>
+
+                    <figure class="img_kone__wrapper">
+                        <img alt="img1" src="./imgs/silver_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Devron</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 14.4.2006</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Anglický plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> La Manche</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> Demira</p>
+                    </div>
+                    <figure class="img_kone__wrapper img_kone__wrapper--vyska">
+                        <img alt="img1" src="./imgs/devron_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Nero</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 18.4.2004</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Český plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 2749 Calypso</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> JM 4108 Verunka</p>
+                    </div>
+
+                    <figure class="img_kone__wrapper img_kone__wrapper--vyska">
+                        <img alt="img1" src="./imgs/Nero_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
+                <div class="section_cards__card card">
+                    <div class="card_top">
+                        <p class="card_top__jmeno">Markus</p>
+                        <p class="card_top__datum card_top_text"><span class="card_top_text--bold">Datum narození:</span> 19.5.2012</p>
+                        <p class="card_top__plemeno card_top_text"><span class="card_top_text--bold">Plemeno:</span> Slovenský plnokrevník</p>
+                        <p class="card_top__otec card_top_text"><span class="card_top_text--bold">Otec:</span> 623 Rubicon</p>
+                        <p class="card_top__matka card_top_text"><span class="card_top_text--bold">Matka:</span> 34341 Miluška</p>
+                    </div>
+                    <figure class="img_kone__wrapper img_kone__wrapper--vyska">
+                        <img alt="img1" src="./imgs/Marcus_3_S.jpg"
+                            onclick="this.classList.toggle('workingImage'); openImg();" />
+                    </figure>
+                </div>
             </div>
 
-            </div>
         </section>
-        <menu class="menu">
-            <li class="menu__item"><a class="button button_kone" href="#nasi">Naší koně</a></li>
-            <li class="menu__item"><a class="button button_kone" href="#soukromi">soukromí koně</a></li>
-        </menu>
+        <ul class="small_nav">
+            <li class="small_nav__item"><a class="button button_kone prize_button" href="#nasi">Naši koně</a></li>
+            <li class="small_nav__item"><a class="button button_kone prize_button" href="#soukromi">soukromí koně</a>
+            </li>
+        </ul>
 
     </main>
     <footer class="footer">
@@ -224,7 +324,7 @@
         <ul class="footer__list list">
             <li class="list__item"><a href="index.html">Úvod</a></li>
             <li class="list__item"><a href="sluzby.html">Služby</a></li>
-            <li class="list__item"><a href="">Akce</a></li>
+            <li class="list__item"><a href="akce.html">Akce</a></li>
             <li class="list__item"><a href="kone.html">Koně</a></li>
             <li class="list__item"><a href="tabor.html">Příměstský tábor</a></li>
             <li class="list__item"><a href="ceník.html">Ceník</a></li>
