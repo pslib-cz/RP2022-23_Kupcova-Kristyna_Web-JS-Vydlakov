@@ -270,13 +270,14 @@ img {
 
 
 .slider_ustajeni__item {
-    display: flex !important;
+    
     align-content: center;
     flex-wrap: wrap;
 }
 
 
 .slider_item {
+    display: flex !important;
     width: 80vw;
     height: 40vh !important;
     background-position: center;
@@ -659,21 +660,21 @@ img {
 
 .article_news__heading {
     font-size: 20px;
+    text-align: center;
     color: var(--dark-red);
 }
 
+.img_container {
+    height: auto;
+    align-items: center;
+}
 
 .img_container__part {
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    
+    max-width: 300px;
 }
 
-.img_container__part > img {
-    width: fit-content;
-    height: 100%;
-}
+
+
 
 .news_structure {
     display: grid;
