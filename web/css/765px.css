@@ -22,6 +22,15 @@
         margin: auto;
     }
 
+    .main__heading {
+        max-width: 600px;
+    }
+
+    .section {
+        max-width: 800px;
+        margin: auto;
+    }
+
     .head_img__text {
         top: 50vh;
         font-size: 64px;
@@ -62,5 +71,16 @@
     .img_container {
         grid-template-columns: repeat(3, 1fr);
         max-width: 600px;
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 500px;
+        height: auto;
+    }
+
+    .article_news {
+        max-width: 38em;
     }
 }

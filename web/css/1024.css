@@ -1,6 +1,10 @@
-@media screen and (min-width: 765px) {
+@media screen and (min-width: 1200px) {
         .main {
-            max-width: 800px;
+            padding: 0;
+        }
+
+        .main__heading {
+            margin-left: 10vw;
         }
 
 
