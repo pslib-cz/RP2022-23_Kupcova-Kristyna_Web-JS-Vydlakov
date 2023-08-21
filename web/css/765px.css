@@ -59,4 +59,8 @@
         gap: 8em;
     }
 
+    .img_container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 600px;
+    }
 }
