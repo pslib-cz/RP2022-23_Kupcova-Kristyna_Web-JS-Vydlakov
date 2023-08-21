@@ -22,15 +22,12 @@
         margin: auto;
     }
 
-    .main__heading {
+    .main_sluzby {
         max-width: 600px;
     }
 
-    .section {
-        max-width: 800px;
-        margin: auto;
-    }
 
+   
     .head_img__text {
         top: 50vh;
         font-size: 64px;
@@ -64,9 +61,7 @@
         margin: 0;
     }
 
-    .section_cards {
-        gap: 8em;
-    }
+    
 
     .img_container {
         grid-template-columns: repeat(3, 1fr);
@@ -83,4 +78,14 @@
     .article_news {
         max-width: 38em;
     }
+
+    
+   
+    
+
+    .prize {
+        display: grid;
+        grid-template-columns: 286px 286px;
+        gap: 32px;
+        justify-content: center;}
 }

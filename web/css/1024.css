@@ -1,12 +1,31 @@
 @media screen and (min-width: 1200px) {
         .main {
-            padding: 0;
+            padding: 1em;
         }
 
-        .main__heading {
-            margin-left: 10vw;
+        .prize {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
         }
 
+        .main_sluzby { 
+            max-width: none;
+        }
+        
+        
+        .main_sluzby__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+
+        .section_cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4em;
+        }
+
+        
 
 
 }

@@ -41,6 +41,10 @@ img {
 
 .main {
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     margin: auto;
 }
 
@@ -173,7 +177,7 @@ img {
 
 .section__heading--absolute {
     position: absolute;
-    top: 10px;
+    top: -14px;
     background-color: var(--white);
     margin-left: 1em;
     color: var(--dark-red);
@@ -268,6 +272,10 @@ img {
     justify-content: center;
 }
 
+
+.slider_ustajeni {
+    max-width: 80vw;
+}
 
 .slider_ustajeni__item {
     
@@ -442,10 +450,10 @@ img {
 }
 
 .prize {
-    display: grid;
-    grid-template-columns: 286px 286px;
-    gap: 32px;
-    justify-content: center;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 
@@ -569,6 +577,7 @@ img {
     flex-wrap: nowrap;
     max-width: 500px;
     margin: auto;
+    gap: 2em;
 }
 
 .button_kone {
@@ -576,13 +585,8 @@ img {
     text-align: center;
 }
 
-.section_cards {
-    display: flex;
-    align-items: center;
-    gap: 5em;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 4em 0;
+.main__section {
+    max-width: 600px;
 }
 
 .card{
@@ -724,4 +728,33 @@ img {
     gap: 2em;
     justify-content: center;
 }
+
+.section__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+
+.section_cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 3em;
+}
+
+
+.section_tabor {
+    max-width: 600px;
+}
+
+.section_sluzby {
+    max-width: 38em;
+}
+
+
+
+
 
