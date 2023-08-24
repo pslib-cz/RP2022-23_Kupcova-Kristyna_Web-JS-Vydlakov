@@ -109,9 +109,10 @@ img {
 
 
 .menu__button:hover {
-    background-color: var(--white);
-    color: var(--dark-red);
+    background-color: var(--dark-red);
+    color: var(--white);
 }
+
 
 
 .head_img {
@@ -139,6 +140,7 @@ img {
 .main__heading {
     padding: .5em;
     max-width: 700px;
+    margin-top: 2em;
 }
 
 .section {
